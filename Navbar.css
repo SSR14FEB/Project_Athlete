@@ -3,25 +3,38 @@
     padding: 0px;
     font-family: Roboto;
 }
-.navigation{
-
+#container1{
     display: grid;
-    height: 2vh;
+    position: relative;
+    height: 54px;
     width:100%;
-    grid-template-columns: 40% 24% 36%;
+    align-items: center;
+    grid-template-columns: 10% 80% 10%;
     grid-template-rows: 100%;
 }
-.navbar{
+.navigation{
+    width: 100%;
+    top: 10px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
     grid-row: 1;
     grid-column: 2/3;
 }
+.img{
+    grid-row: 1;
+    grid-column: 1/2;
+    z-index: 2;
+}
+.navbar ul li a {
+    /* background-color: pink; */
+   z-index: 2; 
+}
 .navbar ul{
     display: flex;
     flex-wrap: wrap;
     gap:5px;
+    /* cursor: pointer; */
 }
 .navigation ul li{
     display: flex;
@@ -40,7 +53,7 @@
     color: white;
     background-color: black;
 }
-.box1 {
+.box1{
     position: absolute;
     height: 0px;
     top:30px;
@@ -55,41 +68,42 @@
 }
 .box1 ul{
     position: relative;
-    left:10px;
     right:10px;
-    top:20px;
-    left:20px;
+    top:10px;
     gap: 5px;
     width:50px;
 }
-.navbar:hover .box1{
+.navbar:hover .box1{ 
     transition:all .3s linear;
-    position: absolute;
+    /* position: relative; */
     visibility: visible;
     color: rgb(13, 13, 13);
     left:0px;
-    top:25px;
+    top:38px;
     width:100%; 
-    height:25%;
+    height:9em;
     display: flex;
     justify-content:center;
     column-gap:16rem;
     flex-wrap: wrap;
-   
     background-color: rgb(255, 255, 255);
     z-index: 1;
 }
 .box1 .nav2{
-    height: 110px;
+    height: 150px;
 }
 .box1 .nav3{
-    height:57px;
+   height: 50px;
+}
+.box2{
+   position: relative;
+   top: 300rem;
 }
 .navbar:hover .box2{
     position: absolute;
     left:0px;
     right:0px;
-    top: 25px;
+    top: 80px;
     height:100%;
     width:100%;
     background-color: rgb(255,255,255,0.1);
