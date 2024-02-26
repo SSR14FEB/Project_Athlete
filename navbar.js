@@ -1,3 +1,8 @@
+// function hidding_Upcoming_match{
+// let match=document.getElementsByClassName('upcoming_Matches');
+// match.style.display='none';
+// }
+// hidding_Upcoming_match();
 function cricket(i){
    
     let tag=document.getElementsByTagName('a');
@@ -48,6 +53,7 @@ function cricket(i){
    
 }
 function football(i){
+    
     let tag=document.getElementsByTagName('a');
     for(let j=0;j<5;j++){
     if(i==j){
